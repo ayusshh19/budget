@@ -15,7 +15,7 @@ class spend_form(forms.ModelForm):
     ("get", "get"),
 )
     reason=forms.CharField(max_length=100,widget=forms.TextInput(attrs={'class':'form-control'}))
-    amount=forms.CharField(max_length=100,widget=forms.TextInput(attrs={'class':'form-control'}))
+    amount=forms.CharField(max_length=100,widget=forms.NumberInput(attrs={'class':'form-control'}))
 
     
     class Meta:

@@ -21,7 +21,7 @@ class template_view(TemplateView):
             context = super().get_context_data(**kwargs)
             context["data"] = add_spends.objects.all()
             context['group']=add_spends.objects.values('date__date').annotate(dtotal=Sum('amount')).order_by('-date__date')
-            # print(context)
+            print(context)
             # print(kwargs)
         return context
     
