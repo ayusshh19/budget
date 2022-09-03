@@ -15,4 +15,3 @@ class add_spends(models.Model):
     amount=models.CharField(max_length=100)
     type=models.CharField(max_length=100,choices=spend_CHOICES)
     date=models.DateTimeField(auto_now_add=True)
-    date.editable=True
